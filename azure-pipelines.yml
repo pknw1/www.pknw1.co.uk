@@ -18,7 +18,8 @@ steps:
   inputs:
     sourceFolder: ${SourcesDirectory}
     contents: '**' 
-    targetFolder: ${Agent.HomeDirectory}
+    targetpath: /tmp/www
+    targetFolder: pk
     #cleanTargetFolder: false # Optional
     #overWrite: false # Optional
     #flattenFolders: false # Optional
