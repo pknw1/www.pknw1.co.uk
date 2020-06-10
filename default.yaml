@@ -1,0 +1,26 @@
+# HTML
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+#- task: ArchiveFiles@2
+#  inputs:
+#    rootFolderOrFile: 
+#    includeRootFolder: false
+#- task: PublishBuildArtifacts@1
+
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(build.sourcesDirectory)'
+    contents: '**' 
+    targetpath: '/tmp/www'
+    targetFolder: '/tmp/www/pk'
+    #cleanTargetFolder: false # Optional
+    #overWrite: false # Optional
+    #flattenFolders: false # Optional
+    #preserveTimestamp: false # Optional
