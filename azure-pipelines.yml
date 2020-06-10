@@ -28,4 +28,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'echo $(date)  "${target-www}" >> /tmp/www/log.txt' && env >> /tmp/www/log.txt
+    script: 'echo $(date)  "${target-www}" >> /tmp/www/log.txt && env >> /tmp/www/log.txt'
