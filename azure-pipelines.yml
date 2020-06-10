@@ -19,7 +19,7 @@ steps:
     sourceFolder: '$(build.sourcesDirectory)'
     contents: '**' 
     targetpath: '/tmp/www'
-    targetFolder: 'pk'
+    targetFolder: '/tmp/www/pk'
     #cleanTargetFolder: false # Optional
     #overWrite: false # Optional
     #flattenFolders: false # Optional
