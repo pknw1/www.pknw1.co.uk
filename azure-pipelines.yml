@@ -7,9 +7,19 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: 
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+#- task: ArchiveFiles@2
+#  inputs:
+#    rootFolderOrFile: 
+#    includeRootFolder: false
+#- task: PublishBuildArtifacts@1
 
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: ${SourcesDirectory}
+    contents: '**' 
+    targetFolder: ${Agent.HomeDirectory}
+    #cleanTargetFolder: false # Optional
+    #overWrite: false # Optional
+    #flattenFolders: false # Optional
+    #preserveTimestamp: false # Optional
