@@ -16,10 +16,10 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: $SourcesDirectory
+    sourceFolder: '$(build.sourcesDirectory)'
     contents: '**' 
-    targetpath: /tmp/www
-    targetFolder: pk
+    targetpath: '/tmp/www'
+#    targetFolder: pk
     #cleanTargetFolder: false # Optional
     #overWrite: false # Optional
     #flattenFolders: false # Optional
