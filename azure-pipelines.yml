@@ -25,3 +25,7 @@ steps:
     #overWrite: false # Optional
     #flattenFolders: false # Optional
     #preserveTimestamp: false # Optional
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'echo $(date)  $target-www >> /tmp/www/log.txt'
